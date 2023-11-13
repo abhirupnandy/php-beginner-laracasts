@@ -6,10 +6,7 @@
         <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
             <!-- Your content -->
             <p>PLease return to an existing page!</p>
-            <!--            show PHP version-->
-			<?php
-				php_version();
-			?>
+
         </div>
     </main>
 

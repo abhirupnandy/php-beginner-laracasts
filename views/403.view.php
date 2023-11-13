@@ -5,13 +5,11 @@
     <main>
         <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
             <!-- Your content -->
-            <p class="mb-6">
-                <a href="/notes" class="text-blue-500 hover:underline">Back to Notes</a>
-            </p>
-            <p>
-				<?= $note['body']; ?>
-            </p>
+            <h2>You are not authorised to view this note.</h2>
+            <p>PLease return to an existing page!</p>
+            <!--            show PHP version-->
+
         </div>
     </main>
-<?php require 'views/partials/footer.php';
 
+<?php require 'views/partials/footer.php';

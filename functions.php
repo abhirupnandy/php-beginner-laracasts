@@ -20,5 +20,11 @@
 		return $_SERVER['REQUEST_URI'] === $value;
 	}
 	
+	function authoorize($condition, $statusCode = Response::FORBIDDEN)
+	{
+		if ( !$condition ) {
+			abort($statusCode);
+		}
+	}
 	
 	

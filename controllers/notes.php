@@ -5,10 +5,9 @@
 	
 	$heading = 'My Notes';
 	
-	$notes = $db -> query('SELECT * FROM my_app.notes WHERE user_id =2') -> fetchAll();
-
-//	dd($notes);
-
-//	dd($_SERVER['REQUEST_URI']);
-//	require 'functions.php';
+	$user_id = 2;
+	
+	$notes = $db -> query('SELECT * FROM my_app.notes WHERE user_id =:user_id', ['user_id' => $user_id]) -> get();
+	
+	
 	require 'views/notes.view.php';

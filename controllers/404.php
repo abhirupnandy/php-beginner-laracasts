@@ -1,6 +1,6 @@
 <?php
 	
-	$heading = '404';
+	$heading = Response::NOT_FOUND;
 
 //	dd($_SERVER['REQUEST_URI']);
 //	require 'functions.php';
