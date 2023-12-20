@@ -7,7 +7,7 @@
 	
 	$user_id = 2;
 	
-	$notes = $db -> query('SELECT * FROM my_app.notes WHERE user_id =:user_id', ['user_id' => $user_id]) -> get();
+	$notes = $db -> query('SELECT * FROM myapp.notes WHERE user_id =:user_id', ['user_id' => $user_id]) -> get();
 	
 	
 	require 'views/notes.view.php';

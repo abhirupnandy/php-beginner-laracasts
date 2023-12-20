@@ -8,7 +8,7 @@
 	$id = $_GET['id'];
 	$user_id = 1;
 	
-	$note = $db -> query('SELECT * FROM my_app.notes WHERE id = :id', ['id' => $id]) -> findOrFail();
+	$note = $db -> query('SELECT * FROM myapp.notes WHERE id = :id', ['id' => $id]) -> findOrFail();
 	
 	authoorize($note['user_id'] === $user_id);
 	
